@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="is-loading-0 is-loading-1 is-loading-2">
+<!-- Main -->
+<div id="main">
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="/" alt="Home">{{ site.header }}</a></h1>
+        <h2>{{ site.subheader }}</h2>
+        <p>{{ site.bio }}</p>
+        {% include socials.html %}
+    </header>
+
+    <section id="page">
+        {{ content }}
+    </section>
+
+    <section id="thumbnails" style="visibility: hidden">
+        <article>
+            <a class="thumbnail" href="/assets/images/logo.png" data-position="">
+                <img src="/assets/images/logo.png" alt="logo" />
+            </a>
+            <h2>{{ site.title }}</h2>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>{{ site.copyright }}</li>
+            <li>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/ElasticDesigns/jekyll-lens">Jekyll Lens</a></li>
+        </ul>
+    </footer>
+</div>
+{% include scripts.html %}
+
+</body>
+</html>

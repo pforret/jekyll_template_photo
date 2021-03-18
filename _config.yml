@@ -1,0 +1,42 @@
+## Site Meta ##
+# The title of the website.
+title: "Website Title"
+# The description of the website
+description: "Website description"
+# Keywords/tags for you site.
+keywords: "website,photography"
+# Your copyright message.
+copyright: "Copyright &copy; 2021 - Peter Forret"
+
+## Site Configurations ##
+# 1st heading of the site.
+header: "Website Header"
+# 2nd heading/sub heading of the website.
+subheader: "Website Subheader"
+# A description/bio of the website.
+bio: "Website Bio"
+social:
+  # Your Twitter username.
+  twitter_username: ""
+  # Your Facebook username.
+  facebook_username: ""
+  # Your Instagram username.
+  instagram_username: "pforret"
+  # GitHub username.
+  github_username: ""
+  # Your email address.
+  email: ""
+
+## Gallery Configuration ##
+# If you modify this, also modify the `default.scope.path` key below.
+gallery_dir: "gallery"
+# Any valid value of "background-position" CSS attribute.
+image_position: "left center"
+
+## Jekyll Configuration ##
+defaults:
+ - scope:
+    # Should be same as the `gallery_dir` key above.
+    path: "gallery"
+   values:
+    image: true
