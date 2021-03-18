@@ -11,18 +11,16 @@
         <h1><a href="/" alt="Home">{{ site.header }}</a></h1>
         <h2>{{ site.subheader }}</h2>
         <p>{{ site.bio }}</p>
-        {% include socials.html %}
     </header>
 
   {{ content }}
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="copyright">
-            <li>{{ site.copyright }}</li>
-            <li>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/ElasticDesigns/jekyll-lens">Jekyll Lens</a></li>
-        </ul>
-    </footer>
+<section id="footer" >
+    {% include socials.html %}
+</section>
+
+{% include footer.html %}
+
 </div>
 {% include scripts.html %}
 
